@@ -21,15 +21,6 @@ public class BallController : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.collider.tag != "Ground")
-        {
-            rig.AddForce(rig.velocity.normalized * speed, ForceMode.VelocityChange);
-            //rig.velocity = rig.velocity.normalized * 10f;
-        }
-    }
-
     public void SetVelocity(Vector3 direction)
     {
         GetComponent<Rigidbody>().velocity = direction * speed;

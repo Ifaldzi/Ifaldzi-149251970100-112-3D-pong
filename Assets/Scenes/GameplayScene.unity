@@ -165,6 +165,7 @@ GameObject:
   - component: {fileID: 499284387}
   - component: {fileID: 499284386}
   - component: {fileID: 499284385}
+  - component: {fileID: 499284388}
   m_Layer: 0
   m_Name: Edge (NE)
   m_TagString: Untagged
@@ -250,6 +251,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 499284383}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &499284388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499284383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 992c030c55f79474baf08085578e8114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceForce: 10
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -933,6 +947,7 @@ GameObject:
   - component: {fileID: 1726917496}
   - component: {fileID: 1726917495}
   - component: {fileID: 1726917494}
+  - component: {fileID: 1726917497}
   m_Layer: 0
   m_Name: Edge (SW)
   m_TagString: Untagged
@@ -1018,6 +1033,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1726917492}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1726917497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726917492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 992c030c55f79474baf08085578e8114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceForce: 10
 --- !u!1001 &1739186282
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1235,6 +1263,7 @@ GameObject:
   - component: {fileID: 1878255961}
   - component: {fileID: 1878255960}
   - component: {fileID: 1878255959}
+  - component: {fileID: 1878255962}
   m_Layer: 0
   m_Name: Edge (NW)
   m_TagString: Untagged
@@ -1320,6 +1349,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1878255957}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1878255962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878255957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 992c030c55f79474baf08085578e8114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceForce: 10
 --- !u!1 &1896118883
 GameObject:
   m_ObjectHideFlags: 0
@@ -1362,6 +1404,7 @@ GameObject:
   - component: {fileID: 1944496744}
   - component: {fileID: 1944496743}
   - component: {fileID: 1944496742}
+  - component: {fileID: 1944496745}
   m_Layer: 0
   m_Name: Edge (SE)
   m_TagString: Untagged
@@ -1447,6 +1490,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1944496740}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1944496745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944496740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 992c030c55f79474baf08085578e8114, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceForce: 10
 --- !u!1 &1976693989
 GameObject:
   m_ObjectHideFlags: 0
