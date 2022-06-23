@@ -26,8 +26,8 @@ public class ScoreManager : MonoBehaviour
         playerScores[playerNumber] += increment;
     }
 
-    public int GetPlayerScore(int playerNumber)
+    public int GetPlayerScore(PlayerNumber playerNumber)
     {
-        return playerScores[playerNumber];
+        return playerScores[(int)playerNumber];
     }
 }

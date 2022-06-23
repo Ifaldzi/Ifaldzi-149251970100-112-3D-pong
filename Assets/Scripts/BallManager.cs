@@ -12,7 +12,7 @@ public class BallManager : MonoBehaviour
     public int maxBall;
     public int spawnInterval;
 
-    public int ballCount = 0;
+    private int ballCount = 0;
     private float timer;
 
     public static BallManager Instance;
