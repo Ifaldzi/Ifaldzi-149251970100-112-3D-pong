@@ -10,8 +10,17 @@ public class BallManager : MonoBehaviour
     public GameObject poolingObjectParent;
     public List<GameObject> pooledObjects;
     public int maxBall;
+    public int spawnInterval;
 
-    private int ballCount = 0;
+    public int ballCount = 0;
+    private float timer;
+
+    public static BallManager Instance;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +38,17 @@ public class BallManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (ballCount >= maxBall)
+        {
+            return;
+        }
+
+        timer += Time.deltaTime;
+        if (timer >= spawnInterval)
+        {
+            SpawnRandomBall();
+            timer -= spawnInterval;
+        }
     }
 
     private GameObject GetPooledObject()
@@ -69,9 +88,14 @@ public class BallManager : MonoBehaviour
         Vector3 direction = position.normalized;
 
         ball.transform.position = position;
-        ball.GetComponent<BallController>().direction = - new Vector3(direction.x, 0, direction.z);
         ball.SetActive(true);
+        ball.GetComponent<BallController>().SetVelocity(-new Vector3(direction.x, 0, direction.z));
 
-        ballCount++;
+        IncreaseBallCount(1);
+    }
+
+    public void IncreaseBallCount(int increment)
+    {
+        ballCount += increment;
     }
 }

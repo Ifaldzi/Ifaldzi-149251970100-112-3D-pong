@@ -13,9 +13,6 @@ public class BallController : MonoBehaviour
     void Start()
     {
         rig = GetComponent<Rigidbody>();
-
-        //rig.AddForce(new Vector3(1, 0, 1) * speed);
-        rig.velocity = direction * speed;
     }
 
     // Update is called once per frame
@@ -28,14 +25,13 @@ public class BallController : MonoBehaviour
     {
         if (collision.collider.tag != "Ground")
         {
-        Debug.Log(rig.velocity.normalized);
             rig.AddForce(rig.velocity.normalized * speed, ForceMode.VelocityChange);
             //rig.velocity = rig.velocity.normalized * 10f;
         }
     }
 
-    public void SetDirection(Vector3 velocity)
+    public void SetVelocity(Vector3 direction)
     {
-        rig.velocity = velocity * speed;
+        GetComponent<Rigidbody>().velocity = direction * speed;
     }
 }
