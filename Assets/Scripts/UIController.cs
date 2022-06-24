@@ -2,10 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIController : MonoBehaviour
 {
     public Text playerOneScore, playerTwoScore, playerThreeScore, playerFourScore;
+    public Text winnerText;
+
+    public GameObject gameOverPanel;
 
     private ScoreManager manager;
 
@@ -32,5 +36,21 @@ public class UIController : MonoBehaviour
         playerFourScore.text = manager
             .GetPlayerScore(ScoreManager.PlayerNumber.PLAYER_FOUR)
             .ToString();
+    }
+
+    public void ShowGameOverPanel(int winner)
+    {
+        winnerText.text = "Player " + winner + " Win";
+        gameOverPanel.SetActive(true);
+    }
+
+    public void Replay()
+    {
+        SceneManager.LoadScene("GameplayScene");
+    }
+
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }

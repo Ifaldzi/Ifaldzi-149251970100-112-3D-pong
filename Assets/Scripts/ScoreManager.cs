@@ -18,6 +18,8 @@ public class ScoreManager : MonoBehaviour
 
     public int[] playerScores = { 0, 0, 0, 0 };
 
+    public UIController ui;
+
     private void Awake()
     {
         Instance = this;
@@ -61,7 +63,7 @@ public class ScoreManager : MonoBehaviour
     private void GameOver()
     {
         int winner = FindWinningPlayer();
-        Debug.Log("Game Over, Win player " + winner);
+        ui.ShowGameOverPanel(winner);
     }
 
     private int FindWinningPlayer()
