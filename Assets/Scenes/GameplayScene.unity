@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &25211000 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3213076441913193733, guid: 9ba95d5229647a74091bfcb40cbf99dd, type: 3}
+  m_PrefabInstance: {fileID: 1739186282}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &69541795
 GameObject:
   m_ObjectHideFlags: 0
@@ -202,6 +207,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 69541795}
   m_CullTransparentMesh: 1
+--- !u!1 &83877720 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2436811808393483169, guid: 7235ecbce814ce941a95d10854891953, type: 3}
+  m_PrefabInstance: {fileID: 1553875184}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &120164323
 GameObject:
   m_ObjectHideFlags: 0
@@ -467,6 +477,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 189095860}
   m_CullTransparentMesh: 1
+--- !u!1 &425847938 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3213076441913193733, guid: 9ba95d5229647a74091bfcb40cbf99dd, type: 3}
+  m_PrefabInstance: {fileID: 778772396}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &430746952
 GameObject:
   m_ObjectHideFlags: 0
@@ -894,6 +909,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 787035410}
   m_CullTransparentMesh: 1
+--- !u!1 &835860380 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2436811808393483169, guid: 7235ecbce814ce941a95d10854891953, type: 3}
+  m_PrefabInstance: {fileID: 3592568833857972942}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &951743539 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3592568832583879699, guid: 7235ecbce814ce941a95d10854891953, type: 3}
@@ -989,6 +1009,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 729921587}
     m_Modifications:
+    - target: {fileID: 2766047036239554928, guid: 7235ecbce814ce941a95d10854891953, type: 3}
+      propertyPath: player
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2766047036239554928, guid: 7235ecbce814ce941a95d10854891953, type: 3}
+      propertyPath: playerNumber
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2766047036239554928, guid: 7235ecbce814ce941a95d10854891953, type: 3}
+      propertyPath: playerPaddle
+      value: 
+      objectReference: {fileID: 25211000}
     - target: {fileID: 3592568832583879699, guid: 7235ecbce814ce941a95d10854891953, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -1156,6 +1188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb6b2dfdb9346b1428ecec927009c6f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxScore: 3
   playerScores: 00000000000000000000000000000000
 --- !u!4 &1127296744
 Transform:
@@ -1171,6 +1204,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1276243699 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3213076441913193733, guid: 9ba95d5229647a74091bfcb40cbf99dd, type: 3}
+  m_PrefabInstance: {fileID: 1775429291}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1397026609
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1178,6 +1216,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 729921587}
     m_Modifications:
+    - target: {fileID: 2766047036239554928, guid: 7235ecbce814ce941a95d10854891953, type: 3}
+      propertyPath: player
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2766047036239554928, guid: 7235ecbce814ce941a95d10854891953, type: 3}
+      propertyPath: playerNumber
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2766047036239554928, guid: 7235ecbce814ce941a95d10854891953, type: 3}
+      propertyPath: playerPaddle
+      value: 
+      objectReference: {fileID: 425847938}
     - target: {fileID: 3592568832583879699, guid: 7235ecbce814ce941a95d10854891953, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -1454,6 +1504,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 729921587}
     m_Modifications:
+    - target: {fileID: 2766047036239554928, guid: 7235ecbce814ce941a95d10854891953, type: 3}
+      propertyPath: wall
+      value: 
+      objectReference: {fileID: 83877720}
+    - target: {fileID: 2766047036239554928, guid: 7235ecbce814ce941a95d10854891953, type: 3}
+      propertyPath: player
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2766047036239554928, guid: 7235ecbce814ce941a95d10854891953, type: 3}
+      propertyPath: playerNumber
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2766047036239554928, guid: 7235ecbce814ce941a95d10854891953, type: 3}
+      propertyPath: playerPaddle
+      value: 
+      objectReference: {fileID: 1276243699}
     - target: {fileID: 3592568832583879699, guid: 7235ecbce814ce941a95d10854891953, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -2073,7 +2139,6 @@ MonoBehaviour:
   pooledObjects: []
   maxBall: 5
   spawnInterval: 3
-  ballCount: 0
 --- !u!4 &1854396553
 Transform:
   m_ObjectHideFlags: 0
@@ -2354,6 +2419,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1883315986}
   m_CullTransparentMesh: 1
+--- !u!1 &1887379436 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3213076441913193733, guid: 9ba95d5229647a74091bfcb40cbf99dd, type: 3}
+  m_PrefabInstance: {fileID: 3213076441977477675}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1896118883
 GameObject:
   m_ObjectHideFlags: 0
@@ -2755,6 +2825,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 729921587}
     m_Modifications:
+    - target: {fileID: 2436811808393483169, guid: 7235ecbce814ce941a95d10854891953, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2766047036239554928, guid: 7235ecbce814ce941a95d10854891953, type: 3}
+      propertyPath: wall
+      value: 
+      objectReference: {fileID: 835860380}
+    - target: {fileID: 2766047036239554928, guid: 7235ecbce814ce941a95d10854891953, type: 3}
+      propertyPath: playerPaddle
+      value: 
+      objectReference: {fileID: 1887379436}
     - target: {fileID: 3592568832583879699, guid: 7235ecbce814ce941a95d10854891953, type: 3}
       propertyPath: m_RootOrder
       value: 5
