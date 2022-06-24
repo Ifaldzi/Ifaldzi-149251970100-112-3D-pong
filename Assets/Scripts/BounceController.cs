@@ -13,7 +13,7 @@ public class BounceController : MonoBehaviour
             Rigidbody rig = collision.rigidbody;
 
             Vector3 direction = rig.velocity.normalized;
-            rig.AddForce(new Vector3(direction.x, 0, direction.y) * bounceForce, ForceMode.VelocityChange);
+            rig.AddForce(direction * bounceForce, ForceMode.VelocityChange);
         }
     }
 }
